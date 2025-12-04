@@ -52,19 +52,18 @@ Simply browse the notebooks in order on GitHub. The analysis is fully documented
 ```bash
 git clone https://github.com/YOUR_USERNAME/QuantFolioAnalysis.git
 cd QuantFolioAnalysis
-\`\`\`
+```
 2. **Install dependencies:**
-
+```bash
 pip install -r requirements.txt
-
+```
 3. **Launch Jupyter:**
-
+```bash
 jupyter notebook
-
+```
 4. **Run notebooks in order:**
 
 Start with 01_data_collection.ipynb to understand data sourcing
-
 Then run 02_eda_cleaning.ipynb for the analysis
 
 ## 📊 What's Included
@@ -84,17 +83,15 @@ Then run 02_eda_cleaning.ipynb for the analysis
 
 ## 📈 Key Insights (So Far)
 1. Price Evolution (2005-2025)
+   
 IVV: Shows strong long-term growth with cyclical patterns
-
 IEF: Steady, low-volatility growth typical of bonds
-
 GLD: "Safe-haven" asset with inflation-resistant properties
 
-2. Correlation Structure
+3. Correlation Structure
+   
 IVV and GLD show moderate correlation
-
 IEF shows negative correlation with IVV (diversification benefit)
-
 These relationships inform portfolio construction
 
 ## 🔮 Next Steps Planned
