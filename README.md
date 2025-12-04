@@ -52,7 +52,7 @@ Simply browse the notebooks in order on GitHub. The analysis is fully documented
 ```bash
 git clone https://github.com/YOUR_USERNAME/QuantFolioAnalysis.git
 cd QuantFolioAnalysis
-bash´´´
+\`\`\`
 2. **Install dependencies:**
 
 pip install -r requirements.txt
