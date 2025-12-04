@@ -21,7 +21,7 @@ The analysis includes:
 - Interactive Power BI dashboards (coming soon)
 
 ## 📁 Project Structure
-
+```bash
 QuantFolioAnalyzer/
 ├── data/
 │ ├── raw/ # Raw downloaded data
@@ -40,7 +40,7 @@ QuantFolioAnalyzer/
 ├── requirements.txt # Python dependencies
 ├── .gitignore
 └── README.md
-
+```
 ## 🚀 Quick Start
 
 ### Option 1: Run on GitHub (View Only)
