@@ -131,3 +131,17 @@ Modern Portfolio Theory
 
 ## 📝 License
 This project is for educational purposes. Data is sourced from Yahoo Finance.
+
+## 📈 Live Dashboard (Coming Soon)
+[![PowerBI Dashboard](https://img.shields.io/badge/PowerBI-Dashboard-yellow)](link-to-dashboard)
+
+## 📊 Sample Analysis Output
+![Correlation Heatmap](images/correlation_heatmap.png)
+![Efficient Frontier](images/efficient_frontier.png)
+
+## 🔧 Tech Stack
+- **Data Collection**: yFinance, Yahoo Finance API
+- **Analysis**: Pandas, NumPy, SciPy, Statsmodels
+- **Visualization**: Matplotlib, Seaborn, Plotly
+- **Database**: PostgreSQL/SQLite, SQLAlchemy
+- **Dashboard**: PowerBI, Plotly Dash
