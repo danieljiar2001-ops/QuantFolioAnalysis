@@ -1,0 +1,5 @@
+Portfolio,CAGR %,Total Return %,Volatility %,Max DD %,Sharpe Ratio,Sharpe_numeric,MaxDD_numeric
+Max Sharpe,7.11%,314.66%,7.89%,-20.01%,0.648,0.648,-20.01
+Min Volatility,4.54%,150.71%,5.59%,-19.46%,0.454,0.454,-19.46
+Equal Weight,7.74%,368.26%,8.98%,-23.33%,0.639,0.639,-23.33
+Risk Parity,6.03%,236.28%,6.44%,-18.35%,0.626,0.626,-18.35
