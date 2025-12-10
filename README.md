@@ -28,12 +28,18 @@ Detailed methodology and analytical framework available in [docs/methodology.md]
 ```bash
 QuantFolioAnalyzer/
 ├── data/
-│ ├── sample_data # Raw downloaded data from yFinance
-├── notebooks/ # Jupyter notebooks for analysis
+│ ├── sample_data.csv
+| ├── statistical_results.csv 
+| ├── risk_summary.csv 
+| ├── risk_metrics_summary.csv
+| ├── backtest_results.csv
+| ├── portfolio_weights.csv
+| ├── portfolio_performance.csv
+├── notebooks/ 
 │ ├── 01_data_collection.ipynb
 │ ├── 02_eda_cleaning.ipynb
 │ ├── 03_statistical_analysis.ipynb
-│ └── 04_portfolio_optimization.ipynb # Not available
+│ └── 04_portfolio_optimization.ipynb # New!
 ├── docs/ # Documentation
 │ └── methodology.md
 ├── requirements.txt # Python dependencies
@@ -67,37 +73,53 @@ Then run 02_eda_cleaning.ipynb for the analysis
 ## 📊 What's Included
 
 ### Notebook 1: Data Collection
-
 - Downloads historical ETF data from Yahoo Finance (2005-2025)
 - Uses yfinance library for reliable data fetching
 - Saves data for reproducible analysis
 
 ### Notebook 2: Exploratory Data Analysis
-
 - Price visualization: See how each ETF evolved over 20 years
 - Returns calculation: Both simple and logarithmic returns
 - Cumulative returns: Track growth of $1 investment
 - Correlation analysis: Understand diversification benefits
 
-## 📈 Key Insights (So Far)
-1. Price Evolution (2005-2025)
-   
-IVV: Shows strong long-term growth with cyclical patterns
-IEF: Steady, low-volatility growth typical of bonds
-GLD: "Safe-haven" asset with inflation-resistant properties
+### Notebook 3: Statistical Analysis (03_statistical_analysis.ipynb)
+- Stationarity testing (ADF, KPSS tests)
+- Normality testing (Jarque-Bera, Shapiro-Wilk)
+- Volatility analysis with GARCH effects detection
+- Autocorrelation analysis (returns, absolute returns, squared returns)
+- Comprehensive risk metrics (Sharpe, Sortino, VaR, CVaR, Maximum Drawdown)
 
-3. Correlation Structure
-   
-IVV and GLD show moderate correlation
-IEF shows negative correlation with IVV (diversification benefit)
-These relationships inform portfolio construction
+### Notebook 4: Portfolio Optimization (04_portfolio_optimization.ipynb)
+- Modern Portfolio Theory implementation
+- Efficient frontier visualization
+- Optimal portfolios: Maximum Sharpe, Minimum Variance, Risk Parity
+- Backtesting with $10,000 initial investment
+- Performance comparison across market regimes
+
+## Key Achivements
+
+### ✅ Completed Analysis:
+- 20-year historical analysis (2005-2025, ~5,200 trading days)
+- Comprehensive statistical testing (ADF, KPSS, Jarque-Bera, Shapiro-Wilk)
+- Advanced risk metrics (Sharpe, Sortino, CVaR, Maximum Drawdown, Omega Ratio)
+- Volatility clustering and GARCH effects identification
+- Correlation dynamics and diversification benefits analysis
+- Modern Portfolio Theory implementation with efficient frontier
+- Four optimized portfolios with backtesting results
+
+### Key Findings:
+- Non-Normal Distributions: All ETF returns reject normality (fat tails, skewness)
+- Stationary Returns: Log returns are stationary (suitable for time series modeling)
+- Volatility Clustering: GARCH effects present across all assets
+- Diversification Benefits: Negative correlation between IVV and IEF during crises
+- Optimal Allocation: Maximum Sharpe portfolio outperforms individual assets
 
 ## 🔮 Next Steps Planned
 
-- Portfolio Optimization - Markowitz efficient frontier
-- SQL Integration - Store and query data efficiently
-- Power BI Dashboard - Interactive visualizations
-- Risk Metrics - VaR, CVaR, maximum drawdown
+- SQL database integration for results storage and querying
+- Power BI dashboard for interactive visualization
+- Automated data pipeline for daily updates
 
 ## 🛠️ Technical Details
 
@@ -108,9 +130,13 @@ These relationships inform portfolio construction
 - Period: 2005-01-01 to 2025-10-01
 
 ### Key Calculations
-- Simple returns: r_t = (P_t - P_{t-1}) / P_{t-1}
-- Logarithmic returns: ln(P_t / P_{t-1})
-- Cumulative returns: (1 + r_1) × (1 + r_2) × ... × (1 + r_n) - 1
+
+- Simple Returns: $r_t = (P_t - P_{t-1}) / P_{t-1}$
+- Logarithmic Returns: $\ln(P_t / P_{t-1})$
+- Cumulative Returns: $(1 + r_1) \times (1 + r_2) \times ... \times (1 + r_n) - 1$
+- Annualized Volatility: $\sigma_{\text{annual}} = \sigma_{\text{daily}} \times \sqrt{252}$
+- Sharpe Ratio: $\frac{E[R] - R_f}{\sigma}$
+- Maximum Drawdown: $\text{MDD} = \frac{\text{Trough} - \text{Peak}}{\text{Peak}}$
 
 ## 🤝 Contributing
 This is a learning project. Suggestions and improvements are welcome!
