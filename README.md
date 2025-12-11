@@ -28,21 +28,21 @@ Detailed methodology and analytical framework available in [docs/methodology.md]
 ```bash
 QuantFolioAnalyzer/
 ├── data/
-│ ├── sample_data.csv
-| ├── statistical_results.csv 
-| ├── risk_summary.csv 
-| ├── risk_metrics_summary.csv
-| ├── backtest_results.csv
-| ├── portfolio_weights.csv
+│ ├── backtest_results.csv 
 | ├── portfolio_performance.csv
+| ├── portfolio_weights.csv 
+| ├── risk_metrics_summary.csv
+| ├── risk_summary.csv
+| ├── sample_data.csv
+| ├── statistical_results.csv 
+├── docs/ # Documentation
+│ └── methodology.md
 ├── notebooks/ 
 │ ├── 01_data_collection.ipynb
 │ ├── 02_eda_cleaning.ipynb
 │ ├── 03_statistical_analysis.ipynb
 │ └── 04_portfolio_optimization.ipynb # New!
-├── docs/ # Documentation
-│ └── methodology.md
-├── requirements.txt # Python dependencies
+├── .gitignore
 └── README.md
 ```
 ## Quick Start
