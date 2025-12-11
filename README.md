@@ -45,7 +45,7 @@ QuantFolioAnalyzer/
 ├── requirements.txt # Python dependencies
 └── README.md
 ```
-## 🚀 Quick Start
+## Quick Start
 
 ### Option 1: Run on GitHub (View Only)
 Simply browse the notebooks in order on GitHub. The analysis is fully documented.
