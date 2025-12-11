@@ -117,12 +117,10 @@ Then run 02_eda_cleaning.ipynb for the analysis
 
 ### Optimal Portfolio Results:
 
-| Portfolio | IVV | IEF | GLD | Return | Volatility | Sharpe | Max DD |
-|-----------|-----|-----|-----|--------|------------|--------|--------|
-| **Max Sharpe** | 58.3% | 35.2% | 6.5% | 8.92% | 12.45% | 0.716 | -34.2% |
-| **Min Variance** | 24.1% | 68.5% | 7.4% | 6.21% | 6.89% | 0.611 | -15.8% |
-| **Equal Weight** | 33.3% | 33.3% | 33.3% | 7.45% | 9.12% | 0.598 | -24.5% |
-| **Risk Parity** | 42.7% | 48.1% | 9.2% | 7.89% | 8.34% | 0.706 | -19.3% |
+Portfolio,IVV %,IEF %,GLD %,Return %,Volatility %,Sharpe Ratio,Max Drawdown %
+Max Sharpe,30.3%,43.1%,26.5%,7.18%,125.18%,0.041,-20.01%
+Min Volatility,17.1%,80.4%,2.5%,4.60%,88.74%,0.029,-19.46%
+Equal Weight,33.3%,33.3%,33.3%,7.86%,142.58%,0.041,-23.33%
 
 ## Next Steps Planned
 
