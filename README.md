@@ -1,4 +1,4 @@
-# 📊 QuantFolio Analyzer
+# QuantFolio Analyzer
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -6,7 +6,7 @@
 
 A comprehensive quantitative financial analysis project analyzing ETF portfolios with Python, SQL, and Power BI.
 
-## 📋 Project Overview
+## Project Overview
 
 This project analyzes three major ETFs to understand their historical performance, risk characteristics, and diversification benefits:
 - **IVV** (iShares Core S&P 500 ETF) - U.S. Large-Cap Stocks
@@ -70,7 +70,7 @@ jupyter notebook
 Start with 01_data_collection.ipynb to understand data sourcing
 Then run 02_eda_cleaning.ipynb for the analysis
 
-## 📊 What's Included
+## What's Included
 
 ### Notebook 1: Data Collection
 - Downloads historical ETF data from Yahoo Finance (2005-2025)
@@ -99,7 +99,7 @@ Then run 02_eda_cleaning.ipynb for the analysis
 
 ## Key Achivements
 
-### ✅ Completed Analysis:
+### Completed Analysis:
 - 20-year historical analysis (2005-2025, ~5,200 trading days)
 - Comprehensive statistical testing (ADF, KPSS, Jarque-Bera, Shapiro-Wilk)
 - Advanced risk metrics (Sharpe, Sortino, CVaR, Maximum Drawdown, Omega Ratio)
@@ -115,13 +115,22 @@ Then run 02_eda_cleaning.ipynb for the analysis
 - Diversification Benefits: Negative correlation between IVV and IEF during crises
 - Optimal Allocation: Maximum Sharpe portfolio outperforms individual assets
 
-## 🔮 Next Steps Planned
+### Optimal Portfolio Results:
+
+| Portfolio | IVV | IEF | GLD | Return | Volatility | Sharpe | Max DD |
+|-----------|-----|-----|-----|--------|------------|--------|--------|
+| **Max Sharpe** | 58.3% | 35.2% | 6.5% | 8.92% | 12.45% | 0.716 | -34.2% |
+| **Min Variance** | 24.1% | 68.5% | 7.4% | 6.21% | 6.89% | 0.611 | -15.8% |
+| **Equal Weight** | 33.3% | 33.3% | 33.3% | 7.45% | 9.12% | 0.598 | -24.5% |
+| **Risk Parity** | 42.7% | 48.1% | 9.2% | 7.89% | 8.34% | 0.706 | -19.3% |
+
+## Next Steps Planned
 
 - SQL database integration for results storage and querying
 - Power BI dashboard for interactive visualization
 - Automated data pipeline for daily updates
 
-## 🛠️ Technical Details
+## Technical Details
 
 ### Data Source
 - Provider: Yahoo Finance (free, reliable historical data)
@@ -138,7 +147,7 @@ Then run 02_eda_cleaning.ipynb for the analysis
 - Sharpe Ratio: $\frac{E[R] - R_f}{\sigma}$
 - Maximum Drawdown: $\text{MDD} = \frac{\text{Trough} - \text{Peak}}{\text{Peak}}$
 
-## 🤝 Contributing
+## Contributing
 This is a learning project. Suggestions and improvements are welcome!
 
 1. Fork the repository
@@ -147,20 +156,24 @@ This is a learning project. Suggestions and improvements are welcome!
 4. Push to branch (git push origin feature/analysis-enhancement)
 5. Open a Pull Request
 
-## 📚 Learning Resources
+## Learning Resources
 Yahoo Finance API Documentation
 Pandas for Financial Analysis
 Modern Portfolio Theory
 
-## 📝 License
+## License
 This project is for educational purposes. Data is sourced from Yahoo Finance.
 
-## 📈 Live Dashboard (Coming Soon)
+## Live Dashboard (Coming Soon)
 [![PowerBI Dashboard](https://img.shields.io/badge/PowerBI-Dashboard-yellow)](link-to-dashboard)
 
-## 🔧 Tech Stack
+## Tech Stack
 - **Data Collection**: yFinance, Yahoo Finance API
 - **Analysis**: Pandas, NumPy, SciPy, Statsmodels
 - **Visualization**: Matplotlib, Seaborn, Plotly
 - **Database**: PostgreSQL/SQLite, SQLAlchemy
 - **Dashboard**: PowerBI, Plotly Dash
+
+🌟 Star this repo if you found it helpful!
+📬 Contact: [dani.j.aracil@gmail.com]
+🐛 Issues: Please use GitHub Issues for bug reports and feature requests
